@@ -23,6 +23,7 @@ import {MatCard, MatCardContent, MatCardModule, MatCardTitle} from "@angular/mat
 import {MatCalendarHeader} from "@angular/material/datepicker";
 import {MatFormField, MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import {MatInputModule} from "@angular/material/input";
     MatListModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideAnimationsAsync()

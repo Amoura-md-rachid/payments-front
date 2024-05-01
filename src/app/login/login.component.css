@@ -1,6 +1,6 @@
-/*.container{*/
-/*  margin: 150px;*/
-/*}*/
+.container {
+  padding: 10px;
+}
 .mat-form-field{
   display: block;
 }
