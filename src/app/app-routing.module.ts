@@ -12,6 +12,7 @@ import {PaymentsComponent} from "./payments/payments.component";
 const routes: Routes = [
   {path: "home", component : HomeComponent },
   {path: "profile", component : ProfileComponent },
+  {path: "", component : LoginComponent },
   {path: "login", component : LoginComponent },
   {path: "loadStudents", component : LoadStudentComponent },
   {path: "loadPayments", component : LoadPaymentComponent },

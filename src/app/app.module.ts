@@ -19,6 +19,10 @@ import { StudentsComponent } from './students/students.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import {MatCard, MatCardContent, MatCardModule, MatCardTitle} from "@angular/material/card";
+import {MatCalendarHeader} from "@angular/material/datepicker";
+import {MatFormField, MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -42,7 +46,10 @@ import { HomeComponent } from './home/home.component';
     MatMenuModule,
 
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     provideAnimationsAsync()
