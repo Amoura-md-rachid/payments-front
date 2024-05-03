@@ -24,8 +24,10 @@ import {MatCalendarHeader} from "@angular/material/datepicker";
 import {MatFormField, MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
+import {AuthGuard} from "./guards/auth.guard";
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent,
     AdminTemplateComponent,
@@ -55,7 +57,6 @@ import {ReactiveFormsModule} from "@angular/forms";
   ],
   providers: [
     provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  ]
 })
 export class AppModule { }
