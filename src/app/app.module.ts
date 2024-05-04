@@ -20,11 +20,13 @@ import { PaymentsComponent } from './payments/payments.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import {MatCard, MatCardContent, MatCardModule, MatCardTitle} from "@angular/material/card";
-import {MatCalendarHeader} from "@angular/material/datepicker";
 import {MatFormField, MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AuthGuard} from "./guards/auth.guard";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -53,7 +55,10 @@ import {AuthGuard} from "./guards/auth.guard";
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatTableModule,
+   MatPaginatorModule
   ],
   providers: [
     provideAnimationsAsync()
